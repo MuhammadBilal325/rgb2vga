@@ -1,0 +1,6 @@
+﻿  Main2.cpp
+C:\Users\Admin\source\repos\rgb2vga\rgb2vga\Main2.cpp(94,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Admin\source\repos\rgb2vga\rgb2vga\Main2.cpp(80,6): warning C4101: 'size': unreferenced local variable
+  Main3.cpp
+  Generating Code...
+  rgb2vga.vcxproj -> C:\Users\Admin\source\repos\rgb2vga\x64\Debug\rgb2vga.exe
