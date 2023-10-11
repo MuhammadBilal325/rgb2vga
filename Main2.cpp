@@ -64,12 +64,13 @@ using namespace std;
 int main() {
 
 	int width, height, channels;
-	unsigned char* img = stbi_load("RGBA.png", &width, &height, &channels, 4);
+	unsigned char* img = stbi_load("fence.png", &width, &height, &channels, 4);
 	if (img == NULL) {
 		cout << "Error in loading image";
 		cout << endl;
 		return 0;
 	}
+	--height;
 	size_t img_size = width * height * channels;
 	int amount = 0;
 	int x = 0;
@@ -84,14 +85,12 @@ int main() {
 		uint8_t inputB = *(p + 2);
 		uint8_t inputA = *(p + 3);
 		int index = findClosestVGAColorIndex(inputR, inputG, inputB);
-		if (index == 0)
+		if (index == 254)
 			index = 253;
-		else if (index == 254)
-			index = 253;
-		if (inputA < 50)
+		if (inputA < 80)
 			index = 255;
 		++x;
-		int size = p - img;
+		size = p - img;
 		if (x >= width)
 		{
 			x = 0;
