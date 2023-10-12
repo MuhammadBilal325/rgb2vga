@@ -64,7 +64,7 @@ using namespace std;
 int main() {
 
 	int width, height, channels;
-	unsigned char* img = stbi_load("fence.png", &width, &height, &channels, 4);
+	unsigned char* img = stbi_load("Mountain.png", &width, &height, &channels, 4);
 	if (img == NULL) {
 		cout << "Error in loading image";
 		cout << endl;
