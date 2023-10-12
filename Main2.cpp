@@ -64,7 +64,7 @@ using namespace std;
 int main() {
 
 	int width, height, channels;
-	unsigned char* img = stbi_load("Mountain.png", &width, &height, &channels, 4);
+	unsigned char* img = stbi_load("horse.png", &width, &height, &channels, 4);
 	if (img == NULL) {
 		cout << "Error in loading image";
 		cout << endl;
@@ -85,9 +85,11 @@ int main() {
 		uint8_t inputB = *(p + 2);
 		uint8_t inputA = *(p + 3);
 		int index = findClosestVGAColorIndex(inputR, inputG, inputB);
+		if (index == 0)
+			index = 253;
 		if (index == 254)
 			index = 253;
-		if (inputA < 80)
+		if (inputA < 150)
 			index = 255;
 		++x;
 		size = p - img;

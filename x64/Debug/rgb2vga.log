@@ -1,3 +1,3 @@
 ﻿  Main2.cpp
-C:\Users\Admin\source\repos\rgb2vga\rgb2vga\Main2.cpp(93,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\Admin\source\repos\rgb2vga\rgb2vga\Main2.cpp(95,12): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
   rgb2vga.vcxproj -> C:\Users\Admin\source\repos\rgb2vga\x64\Debug\rgb2vga.exe
