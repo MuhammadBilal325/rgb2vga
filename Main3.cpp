@@ -5,11 +5,11 @@
 //	ofstream of; 
 //	of.open("BinaryArr.txt");
 //	int resx = 320;
-//	int resy = 30;
+//	int resy = 200;
 //	for (int i = 0; i < resy; i++) {
 //		for (int j = 0; j < resx; j++) {
 //				of << 1 << ",";
 //		}
-//		of << 254<<",";
+//		//of << 254<<",";
 //	}
 //}
