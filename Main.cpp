@@ -1,4 +1,5 @@
 #include <iostream>
+#include<string.h>
 #include <fstream>
 #include <vector>
 #include <cstdint>
@@ -25,8 +26,12 @@ struct BMPHeader {
 
 int main() {
     // Open the BMP file
-    std::ifstream bmpFile("fence.bmp", std::ios::binary);
-
+    std::string name;
+    std::cout << "Enter name of bmp file: ";
+    std::cin >> name;
+    name += ".bmp";
+    std::ifstream bmpFile(name, std::ios::binary);
+ 
     if (!bmpFile) {
         std::cerr << "Failed to open BMP file." << std::endl;
         return 1;
@@ -55,6 +60,10 @@ int main() {
     int x = 0;
     std::ofstream fout;
     fout.open("BinaryArr.txt", std::ios::out);
+    if (!fout) {
+        std::cout << "Cannot find BinaryArr.txt to write to.";
+        return 1;
+    }
     for (int row = bmpHeader.height - 1; row >= 0; row--) {
         for (int col = 0; col < bmpHeader.width; col++) {
             int dataIndex = row * bytesPerRow + col;
