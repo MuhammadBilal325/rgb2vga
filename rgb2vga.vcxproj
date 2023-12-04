@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CharMain.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Main2.cpp" />
     <ClCompile Include="Main3.cpp" />

@@ -65,7 +65,7 @@
 //
 //	int width, height, channels;
 //	string filename;
-//	filename="treeline";
+//	filename="EndScreen";
 //	filename.append(".png");
 //	char* cstr = new char[filename.length() + 1];
 //	strcpy(cstr, filename.c_str());
@@ -90,23 +90,20 @@
 //		uint8_t inputR = *p;
 //		uint8_t inputG = *(p + 1);
 //		uint8_t inputB = *(p + 2);
-//		uint8_t inputA = *(p + 3);
 //		index = findClosestVGAColorIndex(inputR, inputG, inputB);
 //		if (index == 0)
 //			index = 253;
-//		if (index == 254 || index==255)
+//		if (index == 254 || index == 255)
 //			index = 253;
-//		if (inputA < 150)
-//			index = 255;
 //		++x;
 //		size = p - img;
-//		fout << index;
-//		fout << ",";
-//		if (x >= width)
+//		fout << char(index);
+//		//fout << ",";
+//	/*	if (x >= width)
 //		{
 //			x = 0;
 //			fout << 254;
 //			fout << ",";
-//		}
+//		}*/
 //	}
 //}

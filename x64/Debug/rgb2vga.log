@@ -1,3 +1,2 @@
-﻿  Main.cpp
-  LINK : C:\Users\Admin\source\repos\rgb2vga\x64\Debug\rgb2vga.exe not found or not built by the last incremental link; performing full link
-  rgb2vga.vcxproj -> C:\Users\Admin\source\repos\rgb2vga\x64\Debug\rgb2vga.exe
+﻿  CharMain.cpp
+  rgb2vga.vcxproj -> C:\Users\Admin\source\repos\rgb2vga\rgb2vga\x64\Debug\rgb2vga.exe
